@@ -1,0 +1,316 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #abcdbd;
+}
+
+header{
+    display:flex;
+    background-image: url(./img/banner_supermario.jpg);
+    height: 200px;
+    background-position-y: -780px;
+    background-position-x: -300px;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo-mario{
+    width: 150px;
+    height: 150px;
+    background: none;
+    transition: all 0.7s ease-in-out;
+}
+.inicio{
+    background: none;
+}
+.logo-mario:hover{
+    transform: scaleX(1.2);
+    transition: all 0.7s ease-in-out;
+}
+h1{
+    flex-wrap:wrap;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 3rem;
+    background: none;
+    
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #078C03;
+    justify-content:flex-end;
+    padding:0.7rem;
+    height: 3.7rem;
+    align-items: center;
+}
+
+.a-nav{
+    text-decoration: none;
+    font-size: 1rem;
+    color: violet;
+    background-color: #077340;
+    padding:10px;
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 13rem;
+    height: 2.5em;
+    text-align: center;
+    margin-left: 15px;
+    transform: all 0.7s;
+}
+.a-nav:hover{
+    transform: scale(1.2) rotate(15deg);
+    transition: all 0.7s ease-in-out;
+    background-color: #D9042B;
+    color:white;
+}
+.actual{
+    flex-wrap: wrap;
+    background-color: black;
+    color:white;
+}
+.titulo{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+}
+
+
+.posters-imagenes{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95vw;
+    height: 600px;
+}
+.poster{
+    width: 15%;
+    object-fit: cover;
+    transition: all 0.7s ease-in-out;
+     
+}
+.poster:hover{
+    flex-grow: 1;
+    transition: all 0.7s ease-in-out;
+}
+footer{
+    display: flex;
+    background-color: #D9042B;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    height: 30px;
+    
+    margin-top: 70px;
+    color:white;
+
+}
+.ref-footer{
+    display: flex;
+    height: 26px;
+    margin-left:0.5rem;
+    transition:all 0.7s ease-in-out;
+}
+.ref-footer:hover{
+    transform: scale(1.2);
+    transition: all 0.7s ease-in-out;
+}
+.ref-footer img{
+    
+    background-color: #D9042B;
+}
+.pie-pag{
+    display: flex;
+    background: none;
+    margin:auto;
+}
+
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 95vw;
+    height: 600px;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carta{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    padding: 15px;
+    margin:10px; 
+    gap:1.5rem;
+    border-radius: 15px;
+}
+.carta img{
+    width:50%;
+    background-color: coral;
+    object-fit:contain;
+    
+}
+.carta-texto{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carta-texto h3{
+    display: flex;
+    background-color: white;
+   
+
+}
+
+.carta-texto p{
+    display:flex;
+    background-color: white;
+    
+}
+
+.carta:hover{
+    transform: scale(1.2);
+    transition:all 0.7s ease-in-out;
+}
+
+#lumalee{
+    width: 35vw;
+}
+/*informacion*/
+
+.principal-info{
+    display: flex;
+}
+.titulo-lista{
+    font-weight: 600;
+    background: none;
+    border-radius: 15px;
+    padding:2px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+dd{
+    margin-left:50px;
+    background: none;
+    margin-top: 3px;
+}
+dl{
+    background: none;
+
+}
+.listas{
+    display:flex;
+    width: 15vw;
+    height: 300px;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    margin-left:20%;
+    margin-top:10%;
+    padding:15px;
+    box-shadow: 4px 5px 54px 10px black;
+}
+
+.tabla-contenedor{
+    background: none;
+}
+table{
+
+    flex-wrap: wrap;
+    border-collapse:separate;
+    margin-top: 100px;
+    margin-left: 250px;  
+    background-color: #D9042B;
+    
+}
+
+table caption{
+    background-color: #D9042B;
+    color: white;
+    font-size: 30px;
+}
+th{
+    background-color: white;
+    padding: 10px;
+}
+td{
+    padding: 5px;
+    justify-content: center;
+    background-color: white;
+}
+
+/*Contacto*/
+
+.contenedor-form{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    width:15vw;
+    background-color: #077340;
+    box-shadow: 1px 3px 56px -11px black;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    margin-top: 6.1vh;
+    height: 40vh;
+}
+
+.formulario{
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    width: 12vw;
+}
+.caja-form{
+    margin:10px;
+    padding:10px;
+    border-radius: 15px;
+    border-color:#D9042B;
+    color:white;
+    background: none;
+}
+/*saco el background para que quede el fondo del mismo color*/
+form{
+    background: none;
+}
+legend{
+    background: none;
+}
+#btnAceptar{
+    display: flex;
+    background-color: #D9042B;
+    color:white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 115px;
+}
+input{
+    background-color: white;
+    
+}
+textarea{
+    background-color: white;
+}
+.cont_contact{
+    display: flex;
+    justify-content: center;
+}
+
