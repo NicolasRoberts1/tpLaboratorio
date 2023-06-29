@@ -4,15 +4,15 @@
     box-sizing: border-box;
     font-family: 'DynaPuff', cursive;
     font-family: 'Roboto', sans-serif;
-    background-color: #abcdbd;
+    background-color: #73B2D9;
 }
 
 header{
     display:flex;
-    background-image: url(./img/banner_supermario.jpg);
+    background-image: url(./img/BannerArg.jpg);
     height: 200px;
-    background-position-y: -780px;
-    background-position-x: -300px;
+    background-position-y: -620px;
+    background-position-x: 30px;
     gap: 1rem;
     padding: 1rem;
     flex-wrap: wrap;
@@ -41,20 +41,21 @@ h1{
     
 }
 .navbar{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    background-color: #078C03;
-    justify-content:flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #A69256;
     padding:0.7rem;
     height: 3.7rem;
-    align-items: center;
 }
 
 .a-nav{
     text-decoration: none;
     font-size: 1rem;
-    color: violet;
-    background-color: #077340;
+    color: black;
+    background-color: #73B2D9;
     padding:10px;
     border-radius: 15px;
     border: solid 1px black;
@@ -67,8 +68,8 @@ h1{
 .a-nav:hover{
     transform: scale(1.2) rotate(15deg);
     transition: all 0.7s ease-in-out;
-    background-color: #D9042B;
-    color:white;
+    background-color: white;
+    color:#73B2D9;
 }
 .actual{
     flex-wrap: wrap;
@@ -84,55 +85,38 @@ h1{
     font-size: 2rem;
 }
 
+.contenedor-posters{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 97vw;
+    height: 80vh;
+    margin-bottom: 3rem;
+}
 
 .posters-imagenes{
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    width: 95vw;
-    height: 600px;
+    width: 90vw;
+    height: 80vh;
 }
 .poster{
     width: 15%;
     object-fit: cover;
-    transition: all 0.7s ease-in-out;
-     
+    transition: all 0.7s ease-in-out;     
 }
 .poster:hover{
     flex-grow: 1;
     transition: all 0.7s ease-in-out;
 }
-footer{
-    display: flex;
-    background-color: #D9042B;
-    
-    flex-wrap: wrap;
-    align-items: center;
-    height: 30px;
-    
-    margin-top: 70px;
-    color:white;
 
-}
-.ref-footer{
+.contenedor_cards{
     display: flex;
-    height: 26px;
-    margin-left:0.5rem;
-    transition:all 0.7s ease-in-out;
-}
-.ref-footer:hover{
-    transform: scale(1.2);
-    transition: all 0.7s ease-in-out;
-}
-.ref-footer img{
-    
-    background-color: #D9042B;
-}
-.pie-pag{
-    display: flex;
-    background: none;
-    margin:auto;
+    width: 40vw;
+    height: 60vh;
+
 }
 
 .contenedor{
@@ -175,88 +159,121 @@ footer{
 .carta-texto h3{
     display: flex;
     background-color: white;
-   
-
 }
 
 .carta-texto p{
     display:flex;
     background-color: white;
-    
 }
 
 .carta:hover{
     transform: scale(1.2);
     transition:all 0.7s ease-in-out;
 }
+/* Contenedor jugadores*/
+/*JUGADORES*/
+
+.contenedorJugadores{
+    display: flex;
+    flex-direction: column;
+    height: 1900px;
+}
+.filtrarPos{
+    display: flex;
+    width: 50vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox{
+    display: flex;
+    
+    align-items: center;
+    margin:10px;
+    padding: 10px;
+}
+#filtro{
+    margin-right: 15px;
+    margin-left: 100px;
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#buscar{
+    margin-left: 15px;
+    padding:5px;
+    border-radius: 50px;
+}
+
+/* CARTAS DINAMICAS */
+.container{
+    display: inline;
+    justify-items: center;
+    width: 80vw;
+    height: 60vh;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    min-height: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buscar {
+    width: 80vw;
+}
+
+fieldset {
+    text-align: center;
+}
+
+#contenedor_cards{
+    justify-items: center;
+    text-align: center; 
+    width: 100vw;
+    height: 60vh;
+}
+
+.container_info {
+    display: flex;
+  }
+
+  .column {
+    width: 50%;
+    padding: 20px;
+  }
+
+  input:focus {
+    background-color:lightblue;
+  }
 
 #lumalee{
     width: 35vw;
 }
-/*informacion*/
 
-.principal-info{
-    display: flex;
-}
-.titulo-lista{
-    font-weight: 600;
-    background: none;
-    border-radius: 15px;
-    padding:2px;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-dd{
-    margin-left:50px;
-    background: none;
-    margin-top: 3px;
-}
-dl{
-    background: none;
 
-}
-.listas{
-    display:flex;
-    width: 15vw;
-    height: 300px;
-    background-color: white;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 15px;
-    margin-left:20%;
-    margin-top:10%;
-    padding:15px;
-    box-shadow: 4px 5px 54px 10px black;
-}
-
-.tabla-contenedor{
-    background: none;
-}
-table{
-
-    flex-wrap: wrap;
-    border-collapse:separate;
-    margin-top: 100px;
-    margin-left: 250px;  
-    background-color: #D9042B;
-    
-}
-
-table caption{
-    background-color: #D9042B;
-    color: white;
-    font-size: 30px;
-}
-th{
-    background-color: white;
-    padding: 10px;
-}
-td{
-    padding: 5px;
-    justify-content: center;
-    background-color: white;
-}
 
 /*Contacto*/
 
@@ -264,29 +281,30 @@ td{
     display:flex;
     justify-content: center;
     margin:auto;
-    width:15vw;
-    background-color: #077340;
+    width:40vw;
+    background-color:#A69256;
     box-shadow: 1px 3px 56px -11px black;
     border-radius: 15px;
     flex-wrap: wrap;
     margin-top: 6.1vh;
-    height: 40vh;
+    height: 48vh;
 }
 
 .formulario{
     flex-direction: column;
     align-items: center;
     background: none;
-    width: 12vw;
+    width: 30vw;
 }
 .caja-form{
-    margin:10px;
+    margin:20px;
     padding:10px;
     border-radius: 15px;
-    border-color:#D9042B;
+    border-color:black;
     color:white;
     background: none;
 }
+
 /*saco el background para que quede el fondo del mismo color*/
 form{
     background: none;
@@ -296,15 +314,23 @@ legend{
 }
 #btnAceptar{
     display: flex;
-    background-color: #D9042B;
+    background-color:#73B2D9;
     color:white;
     padding: 10px;
     border-radius: 15px;
-    margin-left: 115px;
+    margin-left: 182px;
 }
 input{
     background-color: white;
-    
+}
+#nombre{
+    width: 20vw;
+}
+#email{
+    width: 20vw;
+}
+#mensaje{
+    width: 20vw;
 }
 textarea{
     background-color: white;
@@ -312,5 +338,59 @@ textarea{
 .cont_contact{
     display: flex;
     justify-content: center;
+}
+
+/* FOOTER */
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: #A69256;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 30px;
+  margin-top: 70px;
+  color: white;
+
+}
+.ref-footer{
+    display: flex;
+    height: 26px;
+    margin-left:0.5rem;
+    transition:all 0.7s ease-in-out;
+}
+.ref-footer:hover{
+    transform: scale(1.2);
+    transition: all 0.7s ease-in-out;
+}
+.ref-footer img{
+    
+    background-color: #A69256;
+}
+.pie-pag{
+    display: flex;
+    background: none;
+    margin:auto;
+}
+
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 250px;
+}
+.contenedorImagen img{
+    width: 220px;
+    height: 250px;
+    border-radius: 20%;
+    margin-left: 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: lightgoldenrodyellow;
+    font-family: fantasy;
 }
 
